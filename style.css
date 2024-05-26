@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body{
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color: #121212;
+   color: #e0e0e0;
+   overflow: hidden;
+}
+
+.blinking-text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #bb86fc;
+    letter-spacing: 5px;
+    
+  }
+  
+  .blinking-letter {
+    animation: blink 1s infinite alternate;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .blinking-letter:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .blinking-letter:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .blinking-letter:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .blinking-letter:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .blinking-letter:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .blinking-letter:nth-child(6) {
+    animation-delay: 1.2s;
+  }
+  
+  .blinking-letter:nth-child(7) {
+    animation-delay: 1.4s;
+  }
+  
+  .blinking-letter:nth-child(8) {
+    animation-delay: 1.6s;
+  }
+  
+  .blinking-letter:nth-child(9) {
+    animation-delay: 1.8s;
+  }
+
+
+input{
+    border-radius: 5px;
+    border: 1px solid #50257c;
+    margin-top:30px;
+    height: 3em;
+    width:260px;
+    padding-left:10px;
+    margin-left: 15px;
+    background-color: #1f1f1f; 
+    color: #e0e0e0;
+}
+
+input:active, input:focus{
+    border: 1px solid #bb86fc; 
+    outline: none;
+}
+#wrapper{
+    height:500px;
+    width:400px;
+    margin:85px auto;
+    margin-top: 50px;
+    background-color: #1f1f1f;
+    border-radius:10px;
+    padding:30px;
+}
+
+button{
+    margin-top:20px;
+    background-color: #bb86fc;
+    border-radius: 4px;
+    height: 3em;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color: #121212;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: #9114e487; 
+    color: #e0e0e0;
+}
+#todoList{
+    color: #e0e0e0; 
+    font-size:28px;  
+    margin-top:10px; 
+}
+
+#todoList p{
+  margin:13px 13px;
+  width: 87%;
+  font-size: 17px;
+  padding: 5px;
+  padding-left: 15px;
+  background-color: #2e2e2e;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#todoList p:hover{
+  cursor: pointer;
+  background-color: #3e3e3e; 
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+#todoList p.completed{
+    text-decoration: line-through;
+    color: #757575;
+  }
